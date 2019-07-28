@@ -4,13 +4,17 @@ import pygame
 print("Initialising...")
 #Initialising the pygame library
 pygame.init()
-#Set Display resolution
-gameDisplay = pygame.display.set_mode((800,600))
+#Set Display parameters
+display_width = 800
+display_height = 600
+gameDisplay = pygame.display.set_mode((display_width,display_height))
 #set window name
-pygame.display.set_caption('Stick War')
-#Definitions
+pygame.display.set_caption('Profiteer')
+#Variables
 clock = pygame.time.Clock()
 crashed = False
+black = (0,0,0)
+white = (255,255,255)
 #Game Loop
 while not crashed:
     for event in pygame.event.get():
